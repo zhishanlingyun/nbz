@@ -1,0 +1,9 @@
+/.settings/
+/.project
+
+# for idea
+*.iml
+/.idea
+*/target
+.DS_Store
+.gitattributes

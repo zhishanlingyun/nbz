@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>$!{title}</title>
+    #parse("/layout/head.vm")
+</head>
+
+<body>
+<!-- start: Header -->
+<div class="navbar">
+    #parse("/layout/top.vm")
+</div>
+
+<div class="container-fluid-full">
+    <div class="row-fluid">
+
+        <!-- start: Main Menu -->
+        #parse("/layout/left.vm")
+        <!-- end: Main Menu -->
+
+        <!-- start: Content -->
+        <div id="content" class="span10">
+
+            ##面包屑
+            #parse("/layout/crubms.vm")
+
+            $!{mainctx}
+
+        </div><!--/.fluid-container-->
+
+        <!-- end: Content -->
+    </div><!--/#content.span10-->
+</div><!--/fluid-row-->
+
+<div class="clearfix"></div>
+
+<footer>
+    #parse("/layout/foot.vm")
+</footer>
+
+</body>
+</html>

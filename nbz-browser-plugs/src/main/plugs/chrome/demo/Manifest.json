@@ -1,0 +1,26 @@
+{
+	"name": "chrome扩展小程序",
+	"version": "2.0",
+	"description": "简单的chrome扩展小程序",
+	"manifest_version":2,
+	"icons": { "128": "logo20.png" },
+	"browser_action": {
+		"default_icon": "grid_view.png", // optional 
+		"default_title": "chrome扩展小程序"     // optional; shown in tooltip
+		//"default_popup":"pupo.html"
+	},
+	"permissions": [
+		"notifications",
+		"cookies",
+		//"*://*.baidu.com","https://*.baidu.com","<all_urls>","*.www.baidu.com"
+		"http://www.baidu.com/*",
+		"activeTab"
+	],
+	"background": { "scripts": ["background.js"] },
+	"commands": {
+		"toggle-pin": {
+			"suggested_key": { "default": "Ctrl+Y" },
+			"description": "Toggle feature foo"
+		}
+	}
+}
