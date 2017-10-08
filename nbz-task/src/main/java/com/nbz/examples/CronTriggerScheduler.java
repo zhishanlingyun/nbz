@@ -35,7 +35,7 @@ public class CronTriggerScheduler extends AbstractSchedulerManage{
             cti.setStartTime(new Date());
             cti.setJobGroup(job1.getKey().getGroup());
             cti.setJobName(job1.getKey().getName());
-            cti.setJobDataMap();
+            //cti.setJobDataMap();
 
             scheduler.addJob(job1,false);
             scheduler.scheduleJob(cti);

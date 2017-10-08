@@ -12,11 +12,6 @@
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
-            <artifactId>nbz</artifactId>
-            <groupId>com.nbz</groupId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
         </dependency>
@@ -78,10 +73,7 @@
             <artifactId>javax.servlet-api</artifactId>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
@@ -96,7 +88,7 @@
                 <version>9.3.9.v20160517</version>
                 <configuration>
                     <httpConnector>
-                        <port>80</port>
+                        <port>8080</port>
                     </httpConnector>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webApp>
@@ -111,7 +103,7 @@
                 <configuration>
                     <container>
                         <containerId>tomcat8x</containerId>
-                        <home>E:\dev-tool\apache-tomcat-8.5.20</home>
+                        <home>/export/servers/apache-tomcat-7.0.67</home>
                     </container>
                     <configuration>
                         <type>standalone</type>
